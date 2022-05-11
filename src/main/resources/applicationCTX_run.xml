@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"
+	profile = "run">
+	<!-- profile = "run"이라고 설정한 걸 함 주목해 보셈, ㅋ. -->
+
+
+	<bean id = "serverInfo" class = "com.spellhaven.spring0510_9.ServerInfo">
+		<property name = "ipNum">
+			<value>354.54.15.567</value> <!-- 가짜 아이피를 지어내서 함 넣어 봤다, ㅋ. -->
+		</property>
+		<property name = "portNum">
+			<value>80</value>
+		</property>
+	</bean>
+
+</beans>
